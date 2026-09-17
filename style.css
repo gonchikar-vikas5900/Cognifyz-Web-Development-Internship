@@ -1,0 +1,64 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Image */
+.main-image {
+    width: 100%;
+    max-width: 650px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/* Form Styling */
+
+form {
+    margin-top: 25px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}

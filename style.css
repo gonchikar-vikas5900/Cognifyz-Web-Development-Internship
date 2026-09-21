@@ -62,3 +62,109 @@ button {
 button:hover {
     background-color: darkblue;
 }
+/* LEVEL 2 - TASK 2 */
+/* Responsive Design */
+
+/* Tablet and Mobile Screens */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 5px;
+    }
+
+}
+/* ================================= */
+/* LEVEL 2 - TASK 2 */
+/* HAMBURGER NAVIGATION */
+/* ================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+.nav-brand {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Hamburger Button */
+
+.menu-toggle {
+    display: none;
+
+    background-color: transparent;
+    color: white;
+
+    font-size: 25px;
+    border: none;
+
+    cursor: pointer;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        width: 100%;
+        flex-direction: column;
+
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+}

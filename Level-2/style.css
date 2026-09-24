@@ -1,0 +1,170 @@
+/* ================================= */
+/* GENERAL PAGE STYLING */
+/* ================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/* ================================= */
+/* MOBILE-FRIENDLY NAVIGATION */
+/* ================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+.nav-brand {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+
+/* Hamburger Button */
+
+.menu-toggle {
+    display: none;
+
+    background-color: transparent;
+    color: white;
+
+    font-size: 25px;
+
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ================================= */
+/* MAIN CONTAINER */
+/* ================================= */
+
+.container {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 50px auto;
+    padding: 30px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================= */
+/* HEADING */
+/* ================================= */
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* ================================= */
+/* PARAGRAPH */
+/* ================================= */
+
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ================================= */
+/* RESPONSIVE DESIGN */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+
+    /* Show hamburger button */
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    /* Hide navigation links */
+
+    .nav-links {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        margin-top: 15px;
+    }
+
+
+    /* Show navigation when menu is active */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    /* Allow navbar to wrap */
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+
+    /* Make inputs responsive */
+
+    input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+
+    /* Button spacing */
+
+    button {
+        margin-top: 5px;
+    }
+}
